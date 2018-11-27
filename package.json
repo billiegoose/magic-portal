@@ -1,0 +1,35 @@
+{
+  "name": "magic-portal",
+  "version": "0.0.0",
+  "description": "Pass objects with async methods between WebWorkers and the main thread easily",
+  "source": "index.js",
+  "files": [
+    "dist"
+  ],
+  "main": "dist/index.js",
+  "umd:main": "dist/index.umd.js",
+  "unpkg": "dist/index.umd.js",
+  "module": "dist/index.es6.js",
+  "scripts": {
+    "build": "microbundle --name MagicPortal",
+    "prepublishOnly": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wmhilton/magic-portal.git"
+  },
+  "keywords": [],
+  "author": "William Hilton <wmhilton@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wmhilton/magic-portal/issues"
+  },
+  "homepage": "https://github.com/wmhilton/magic-portal#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "jest": "^23.6.0",
+    "microbundle": "^0.7.0"
+  }
+}
