@@ -66,7 +66,7 @@ class _MagicPortalImplementation {
   onReturn(data) {
     if (this.calls.has(data.id)) {
       let {resolve, reject} = this.calls.get(data.id)
-      this.calls.clear(data.id)
+      this.calls.delete(data.id)
       data.error ? reject(data.error) : resolve(data.result)
     }
   }
